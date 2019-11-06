@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>maquetecio</title>
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-size: 16px;
+        }
+        
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+        header {
+            width: 100%;
+            height: 70vh;
+            background: orange;
+            display: flex;
+        }
+        header div {
+            position: relative;
+            width: 50%;
+            height: 70vh;
+        }
+        
+        header div img {
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        h1{
+            position: absolute;
+            text-align:center;
+            top: 72vh;
+            width: 100%;
+            height: 70vh;
+        }
+        article{
+            font-family: 'Jomolhari', serif;
+            width: 35.4em;
+            margin:auto;
+        }
+        article>p:first-child {
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.4em;
+            padding: 8vw 0;
+            color: brown;
+            column-count: 2;
+            column-gap: 2em;
+            column-rule: 1px solid brown;
+          }
+        
+        article #cos>p:first-child::first-letter {
+            color:brown;
+            font-family: 'ZCOOL XiaoWei', serif;
+            font-size: 10em;
+            float: left;
+            margin-right: 0.2em;
+            margin-top: -0.35em;
+            margin-bottom: -0.2em;
+            padding-bottom: 0.2em;
+            padding-right: 0.2em;
+        }
+        article #cos {
+            text-align: justify;
+            hyphens: auto;
+            width: auto;
+            padding: 0 3em;
+        }
+        article #cos p{
+            padding: 0 0 1.5em 0;
+        }
+        
+        .cercle,
+        .hexagon {
+            background: red;
+        }
+        .cercle img,
+        .hexagon img{
+            mix-blend-mode: hard-light;
+        }
+        
+        .cercle,
+        .cercle img {
+            border-radius: 50%;
+        }
+        .cercle {
+            max-width: 20em;
+            float: left;
+            margin-left: -3em;
+            shape-margin: 1em;
+            shape-outside: circle(50%) border-box;
+        }
+        .hexagon,
+        .hexagon img {
+            clip-path: polygon(50% 8%, 85% 28%, 79% 74%, 51% 96%, 6% 73%, 9% 25%);
+        }
+        
+        .hexagon{
+            max-width: 20em;
+            float: right;
+            margin-right: -8em;
+            shape-margin: 2em;
+            shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)border-box;
+        }
+        
+        @media (max-width:600px){
+            body{
+                font-size: 10px;
+            }
+        }
+    </style>  
+</head>
+
+<body>
+   <header>
+       <div class="bloc_esq">
+           <img  src="img/0ecf0a1453dc05e58ef9e799acd72fdd.jpg">
+       </div>
+       <div class="bloc_dret">
+           <img src="img/27e82f0ebb8797dde613aea06092d02e.jpg">
+       </div>
+       <h1>HENRY BERLEWI</h1>
+   </header>
+   <article>
+       <p>
+           Henryk Berlewi (20 de octubre de 1894 en Varsovia - 2 de agosto de 1967 en París) fue un pintor, diseñador gráfico y teórico del arte francés, que es recordado principalmente como un artista abstracto que allanó el camino para el arte óptico, pero también fue una figura importante en Diseño y tipografía de libros en yiddish a principios de la década de 1920. Dibujó retratos de muchos escritores y artistas judíos, entre ellos Uri Zvi Greenberg.Berlewi nació en Varsovia en una familia judía polaca asimilada
+       </p>
+       <div class="cercle"> 
+       <img  src="img/a98c4ad40ba0b6b2fa4fd0eb50e33125.jpg">
+       </div>
+       <p>
+           Estudió arte en Amberes y París, y participó activamente en los círculos de arte polacos.Con el apoyo de su madre, Berlewi estudió bellas artes en Varsovia (1904-1909), Amberes (1909-1910) y París (1911-1912), regresando a Varsovia en 1913 para estudiar en la escuela de diseño. Durante la Primera Guerra Mundial descubrió el futurismo y el dadaísmo, y en 1918 conoció al futurista Aleksander Wat y al formista Anatol Stern, compañeros judíos cuyo verso en polaco ilustró más tarde. En 1918-1922, Berlewi se centró en temas judíos.En marzo de 1924, Berlewi publicó su sección teórica (en progreso desde 1922) Mechano-Faktura, utilizando medios mecánicos para crear textura, precedida por el escritor Aleksander Wat. Su premisa básica rechaza la ilusión del espacio en favor de la bidimensionalidad; el color se reduce a negro, blanco y rojo, y los equivalentes visuales de las imágenes se logran por medios mecánicos utilizando arreglos rítmicos de líneas y formas geométricas simples como círculos y cuadrados.
+       </p>
+       <div class="hexagon">
+           <img src="img/ECEgAJmVUAAFEke.jpg">
+       </div>
+       <p>
+           Junto con la publicación, organiza la primera exposición de Mechanofaktura en el Salón de Automóviles Austro-Daimler.En el verano de 1924, Berlewi fue invitado por Herwarth Walden, fundador de la revista y galería Der Sturm, para exhibir sus obras de mecanofaktura en Berlín; Se publicó la versión alemana de su manifiesto. Más tarde, en 1924, fundó la agencia de publicidad Reklama-Mechano con Wat y Stanisław Brucz, que obtuvo un contrato para el folleto de chocolate Plutos.
+       </p>
+   </article> 
+</body>
+</html>
